@@ -189,7 +189,7 @@ body {
 
 .footer-nav-link:focus,
 .footer-nav-link:hover {
-    color: var(--white-color);
+    color: var(--primary-color);
 }
 
 .footer-contacts-link {
@@ -202,7 +202,7 @@ body {
 
 .footer-contacts-link:focus,
 .footer-contacts-link:hover {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--primary-color);
 }
 
 .filter-btn {
