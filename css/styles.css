@@ -5,14 +5,17 @@
     --grey-color: #757575;
     --light-color: #F5F4FA;
     --white-color: #ffffff;
+    --blue-color: #188CE8;
     --primary-font: "Roboto", sans-serif;
-    --secondary-font: "Raleway";
+    --secondary-font: "Raleway", sans-serif;
 } 
 
 body {
     background-color: var(--white-color);
     color: var(--dark-color);
     font-family: var(--primary-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 .title {
@@ -24,8 +27,23 @@ body {
     color: var(--dark-color);
 }
 
+.hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .link {
     text-decoration: none;
+    font-style: normal;
 }
 
 .list {
@@ -101,6 +119,7 @@ body {
 }
 
 .banner-btn {
+    font-family: inherit;
     background-color: var(--primary-color);
     font-weight: 700;
     font-size: 16px;
@@ -110,6 +129,11 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-color);
+}
+
+.banner-btn:hover,
+.banner-btn:focus {
+    background-color: var(--blue-color) ;
 }
 
 .feature-title {
@@ -127,6 +151,10 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey-color);
+}
+
+.team-section {
+    background-color: var(--light-color);
 }
 
 .team-title {
@@ -157,6 +185,11 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white-color);
+} 
+
+.footer-nav-link:focus,
+.footer-nav-link:hover {
+    color: var(--white-color);
 }
 
 .footer-contacts-link {
@@ -167,8 +200,14 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-contacts-link:focus,
+.footer-contacts-link:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .filter-btn {
     background-color: var(--light-color);
+    font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -179,7 +218,8 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .apps-title {
